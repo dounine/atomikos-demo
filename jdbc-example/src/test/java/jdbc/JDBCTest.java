@@ -23,9 +23,24 @@ public class JDBCTest {
      * 要想成功插入可把UserDao中的异常代码处删除,两个数据库可正常插入数据
      */
     @Test
-    public void testSave(){
+    public void testRegister(){
         User user = new User();
         user.setUsername("admin");
-        userService.register(user);
+        try {
+            userService.register(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testLogin(){
+        User user = new User();
+        user.setUsername("admin");
+        try {
+            userService.login(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

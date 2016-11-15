@@ -7,6 +7,8 @@ import com.dounine.jta.entity.User;
  */
 public interface IUserService {
 
-    void register(User user);
+    void register(User user) throws Exception;
+
+    void login(User user) throws Exception;
 
 }

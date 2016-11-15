@@ -9,4 +9,8 @@ public interface IUserDao {
 
     void save(User user) throws Exception;
 
+    void saveLoginLog(User user) throws Exception;
+
+    void saveLoginInfo(User user) throws Exception;
+
 }
