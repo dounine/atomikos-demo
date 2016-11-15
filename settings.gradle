@@ -1,4 +1,3 @@
 rootProject.name = 'atomikos-demo'
 
 include ':jdbc-example'
-
